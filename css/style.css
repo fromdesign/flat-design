@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {text-decoration:none;}
+
+.clearfix:after { content:''; display:block; clear:both;}
+
+
+/*  TYPOGRAPHY  */
+body {
+		background:#dfdfdf;
+		color:#868686;
+		font-family: 'Sintony', sans-serif;
+		font-size:14px;
+}
+h1, h2, h3, h4, h5, h6 {
+		font-family: 'Acme', sans-serif;
+		font-weight:normal; 
+}
+
+/*  LAYOUT  */
+.main-content { width:1000px; margin:0 auto;}
+
+/*  HEADER  */
+header {text-align:center; padding-top:52px;}
+header h1  {font-size:48px; line-height:40px; margin-bottom:30px;}
+header h1 span { font-size: 24px; letter-spacing:0.22em; }
+nav { background:#cdcdcd; }
+nav ul { width:1000px; margin:0 auto; height:70px; position:relative; left:-4px;}
+nav ul li {float:left; height:70px; border-right:4px solid #dfdfdf; position:relative; text-align:center; line-height:70px; transition:background 0.35s;
+}
+nav ul li a {color:#fff; font-size:18px; text-transform:uppercase; padding:0 40px;}
+
+nav ul li:first-child { border-left:4px solid #dfdfdf;}
+
+nav ul li:after { 
+	content:''; width:8px; height:8px;
+	border:3px solid #dfdfdf;
+	background:#f26c4e; position:absolute;
+	border-radius:50%; right:-9px;
+	top:50%; margin-top:-7px;	z-index:1;
+}
+nav ul li:first-child:before{
+	content:''; width:8px; height:8px;
+	border:3px solid #dfdfdf;
+	background:#f26c4e; position:absolute;
+	border-radius:50%; left:-9px;
+	top:50%; margin-top:-7px;		
+}
+nav ul li.bg-orange {background:#f26c4e;}
+nav ul li.bg-purple {background:#cf6baa;}
+nav ul li.bg-yellow {background:#f2c24d;}
+nav ul li.bg-green {background:#a3d178;}
+nav ul li.bg-blue {background:#78ccd0;}
+
+nav ul li.bg-orange:hover { background:#fa9079;}
+nav ul li.bg-purple:hover { background:#e88dc6;}
+nav ul li.bg-yellow:hover { background:#f9d170;}
+nav ul li.bg-green:hover { background:#c3eb9d;}
+nav ul li.bg-blue:hover { background:#9be4e8;}
+
+/*   main content */
+.main-content {margin-top:4px;}
+.feature-slider {background:#fff; position:relative; height:320px;}
+.feature-slider > a {position:absolute; width:53px; height:53px; top:calc(50% - 26px);text-indent:-9999em;background:url(../images/slider-nav.png) no-repeat; }
+
+.feature-slider > a.nav-left {left:-10px; }
+.feature-slider > a.nav-right {right:-10px; background-position:-53px 0;}
+.slide img {position:absolute; right:96px; bottom:0; }
+.slider-nav {position:absolute; bottom:10px; left:10px; }
+.slider-nav li {float:left; margin-right:10px; }
+.slider-nav li a{width:10px; height:10px; background:#d9d9d9; border-radius:50%; display:block; } 
+
+.slider-nav li.active a { background:#f26c4e;}
+.slide-text {padding:58px 0 0 93px; width:310px;}
+.slide-text h2{color:#f26c4e; font-size:24px;}
+.slide-text p{color:#c6c6c6; font-size:14px; margin:26px 0 23px; line-height:16px; 
+text-align: justify;  word-break:initial; hyphens: auto;  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+.btn{background:#f26c4e; color:#fff; font-size:18px; line-height:60px; text-align:center; width:100%; display:block; border-radius:3px; } 
+
+/* feature-services */
+.feature-services {display:table;}
+.feature-services .column-half {display:table-cell; width:50%; padding:40px; text-align:center; box-sizing:border-box;} 
+
+.bg-green {background:#a3d178;}
+.bg-dark-green {background:#8ebe5f;}
+.column-half h2 { font-size:30px; margin:29px 0 24px; color:#fff; }
+.column-half p { font-size:14px; color:#fff; text-align:left; margin-bottom:20px;} 
+.column-half p a { color:#fff; } 
+.column-half p a:hover { color:#e7ffbc; }
+ 
+ /*  footer */
+ 
+ footer {display:table; width:100%;}
+ .column-one-third {width:33.333%; display:table-cell; padding:40px; box-sizing:border-box; }
+  .column-one-third h2 {
+	font-size:24px; margin-bottom:16px; 
+  }
+  .blog-list li {margin-bottom: 16px; list-style:disc; color:#a3d178; font-size:22px;}
+  .blog-list li a { color:#78ccd0; font-size:14px; font-weight:bold;}
+  .social-list li { float:left; margin-right:11px; }
+  .social-list li:last-child{margin-right:0;}
+
+ .registration {background:#f26c4e; }
+ 
+ .registration h2 {color:#fff;}
+ 
+ .registration input {display:block; width:100%; background:#fff; padding-left:15px; height:45px; color:#dfdfdf;margin-bottom:15px; box-sizing:border-box;}
+ 
+ .registration .btn{  border:none;  background:#f2c24d; color:#fff; font-size:18px; font-weight:bold; text-transform:uppercase; line-height:55px;}
+ form {width:100%;}
+ 
+ /* 	RESPONSIVE         */
+ @media screen and (max-width:480px) {
+	/*  body {background:blue;} */
+	.main-content { width:100%;}
+	nav ul {width:100%; height:auto; left:0;}
+	nav ul li {width:100%; border-right:none; border-left:0;}
+	nav ul li:before, nav ul li:after { display:none;}
+	nav ul li:first-child {border-left:0; }
+	.slide img {display:none;}
+	.feature-slider > a.nav-left {left:10px; }
+	.feature-slider > a.nav-right {right:10px; }	
+	.feature-services .column-half {width:100%; display:block;}
+	.column-one-third {width:100%; display:block;}
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
